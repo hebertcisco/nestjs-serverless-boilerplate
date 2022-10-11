@@ -1,7 +1,5 @@
 import { Test } from '@nestjs/testing';
 
-import { AppServiceInterface } from 'nest-shared';
-
 import { StatusModule } from '../../status/status.module';
 import { CatsModule } from '../../cats/cats.module';
 
@@ -20,7 +18,7 @@ describe('AppController', () => {
 
     describe('status', () => {
         it('should return the app status', async () => {
-            const result: typeof AppServiceInterface = {
+            const result = {
                 status: 'online',
                 date: new Date('2022-09-18T17:13:31.245Z'),
                 environment: 'development',
@@ -30,7 +28,7 @@ describe('AppController', () => {
                 },
             };
             jest.spyOn(appController, 'status').mockImplementation(
-                async () => result,
+                async () => Promise.resolve(result),
             );
 
             expect(await appController.status()).toBe(result);

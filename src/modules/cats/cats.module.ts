@@ -4,7 +4,7 @@ import { CatsController } from './cats.controller';
 import { CatsService } from './services/cats.service';
 import { CatsServiceMock } from './tests/mocks/cats.service.mock';
 
-import { configService } from '../../config/application.config';
+import { configService } from 'nest-shared';
 
 @Module({
     controllers: [CatsController],
@@ -17,4 +17,4 @@ import { configService } from '../../config/application.config';
         },
     ],
 })
-export class CatsModule {}
+export class CatsModule { }

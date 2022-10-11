@@ -1,5 +1,5 @@
 import { join } from 'node:path';
-import { ConfigService } from '../../../config/application.config';
+import { ConfigService } from 'nest-shared';
 import { TypeOrmModuleOptionsExtension } from 'nest-shared/lib/shared/common/interfaces/type-orm.interface';
 
 export class TypeormConfig extends ConfigService {

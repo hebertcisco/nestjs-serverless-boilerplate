@@ -1,6 +1,4 @@
 import { Injectable } from '@nestjs/common';
-import type { AppServiceInterface } from 'nest-shared';
-
 import { StatusEnum } from './status.enum';
 
 @Injectable()
@@ -14,7 +12,7 @@ export class StatusService {
         return this.status;
     }
 
-    public show(): Promise<typeof AppServiceInterface> {
+    public show() {
         return Promise.resolve({
             status: this.Status,
             date: new Date(),

@@ -3,7 +3,7 @@ import { Module } from '@nestjs/common';
 import { StatusService } from './status.service';
 import { StatusServiceMock } from './tests/mocks/status.service.mock';
 
-import { configService } from '../../config/application.config';
+import { configService } from 'nest-shared';
 
 @Module({
     providers: [
@@ -23,4 +23,4 @@ import { configService } from '../../config/application.config';
         },
     ],
 })
-export class StatusModule {}
+export class StatusModule { }
