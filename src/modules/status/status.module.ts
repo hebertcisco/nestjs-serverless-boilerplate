@@ -23,4 +23,4 @@ import { configService } from 'nest-shared';
         },
     ],
 })
-export class StatusModule { }
+export class StatusModule {}

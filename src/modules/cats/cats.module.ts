@@ -17,4 +17,4 @@ import { configService } from 'nest-shared';
         },
     ],
 })
-export class CatsModule { }
+export class CatsModule {}

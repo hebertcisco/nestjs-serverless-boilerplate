@@ -27,8 +27,8 @@ describe('AppController', () => {
                     function_version: 'local',
                 },
             };
-            jest.spyOn(appController, 'status').mockImplementation(
-                async () => Promise.resolve(result),
+            jest.spyOn(appController, 'status').mockImplementation(async () =>
+                Promise.resolve(result),
             );
 
             expect(await appController.status()).toBe(result);
