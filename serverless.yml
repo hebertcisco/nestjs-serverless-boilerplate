@@ -1,0 +1,29 @@
+service: nestjs-serverless-boilerplate
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+
+functions:
+  main:
+    timeout: 30
+    handler: dist/main.handler
+    events:
+      - http:
+          method: GET
+          path: /
+      - http:
+          method: GET
+          path: /status
+      - http:
+          method: GET
+          path: /cats
+      - http:
+          method: POST
+          path: /cats
+      - http:
+          method: ANY
+          path: "{proxy+}"
