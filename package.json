@@ -1,7 +1,7 @@
 {
-    "name": "nestjs-minimal-boilerplate",
+    "name": "nestjs-serverless-boilerplate",
     "version": "0.0.1",
-    "description": "Nestjs minimal API boilerplate",
+    "description": "λ Nest.js Serverless boilerplate",
     "author": "Hebert Barros <hebert@hotbrains.com.br>",
     "private": true,
     "license": "UNLICENSED",
@@ -51,6 +51,7 @@
         "reflect-metadata": "0.1.13",
         "rimraf": "3.0.2",
         "rxjs": "7.5.6",
+        "sinon": "^14.0.1",
         "swagger-ui-express": "4.5.0",
         "tsyringe": "4.7.0",
         "typeorm": "0.3.9"
