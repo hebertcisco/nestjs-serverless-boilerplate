@@ -1,4 +1,4 @@
-name: Node.js and Docker CI
+name: Node.js CI
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   build-tsc:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
@@ -24,10 +24,3 @@ jobs:
       - run: npm install
       - run: npm run build --if-present
       - run: npm test
-
-  build-docker-image:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag nestjs-serverless-boilerplate:$(date +%s)
