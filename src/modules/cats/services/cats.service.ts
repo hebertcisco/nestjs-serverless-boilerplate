@@ -2,8 +2,8 @@ import { Injectable } from '@nestjs/common';
 import crypto from 'node:crypto';
 import { CrudBase } from 'nest-shared';
 
-import type { Cat } from '@modules/cats/interfaces/cat.interface';
-import type { CreateCatDto } from '@modules/cats/dto/create-cat.dto';
+import type { Cat } from '../../cats/interfaces/cat.interface';
+import type { CreateCatDto } from '../../cats/dto/create-cat.dto';
 
 @Injectable()
 export class CatsService implements CrudBase {

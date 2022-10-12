@@ -1,9 +1,7 @@
-import {
-    Module,
-} from '@nestjs/common';
+import { Module } from '@nestjs/common';
 
-import { CatsModule } from '@modules/cats/cats.module';
-import { StatusModule } from '@modules/status/status.module';
+import { CatsModule } from '../cats/cats.module';
+import { StatusModule } from '../status/status.module';
 
 import { AppController } from './app.controller';
 
@@ -11,6 +9,4 @@ import { AppController } from './app.controller';
     imports: [CatsModule, StatusModule],
     controllers: [AppController],
 })
-export class AppModule {
-
-}
+export class AppModule { }

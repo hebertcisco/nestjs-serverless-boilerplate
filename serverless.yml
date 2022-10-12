@@ -16,7 +16,7 @@ environment:
 functions:
   main:
     timeout: 30
-    handler: dist/main.handler
+    handler: dist/src/main.handler
     events:
       - http:
           method: GET

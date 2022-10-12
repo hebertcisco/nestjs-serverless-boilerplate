@@ -1,6 +1,6 @@
 import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
 
-import { Cat } from '@modules/cats/interfaces/cat.interface';
+import { Cat } from '../../cats/interfaces/cat.interface';
 
 export class CreateCatDto implements Cat {
     @IsString()

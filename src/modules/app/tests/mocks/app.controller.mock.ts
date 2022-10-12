@@ -1,5 +1,5 @@
 import type { Response } from 'express';
-import statusServiceMock from '@modules/status/tests/mocks/status.service.mock';
+import statusServiceMock from '../../../status/tests/mocks/status.service.mock';
 
 export class AppControllerMock {
     index(res: Response) {
