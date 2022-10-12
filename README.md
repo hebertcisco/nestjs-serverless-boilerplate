@@ -1,4 +1,6 @@
-# Basic documentation
+# λ Nest.js Serverless boilerplate
+
+[![Node.js CI](https://github.com/hebertcisco/nestjs-serverless-boilerplate/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/hebertcisco/nestjs-serverless-boilerplate/actions/workflows/build-and-test.yml)
 
 ## Runing the application with docker
 
