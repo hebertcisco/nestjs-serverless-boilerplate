@@ -26,5 +26,5 @@ async function bootstrap(): Promise<void> {
 }
 
 (async (): Promise<void> => {
-    await bootstrap()
+    await bootstrap();
 })();

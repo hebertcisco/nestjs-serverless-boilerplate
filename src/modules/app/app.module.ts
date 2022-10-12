@@ -9,4 +9,4 @@ import { AppController } from './app.controller';
     imports: [CatsModule, StatusModule],
     controllers: [AppController],
 })
-export class AppModule { }
+export class AppModule {}

@@ -2,19 +2,12 @@ import { Module } from '@nestjs/common';
 
 import { CatsController } from './cats.controller';
 import { CatsService } from './services/cats.service';
-import { CatsServiceMock } from './tests/mocks/cats.service.mock';
 
-import { configService } from 'nest-shared';
 
 @Module({
     controllers: [CatsController],
     providers: [
-        {
-            provide: CatsService,
-            useClass: configService.isProduction()
-                ? CatsService
-                : CatsServiceMock,
-        },
+        CatsService
     ],
 })
-export class CatsModule {}
+export class CatsModule { }
