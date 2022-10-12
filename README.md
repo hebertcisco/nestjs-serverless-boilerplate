@@ -2,28 +2,10 @@
 
 [![Node.js CI](https://github.com/hebertcisco/nestjs-serverless-boilerplate/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/hebertcisco/nestjs-serverless-boilerplate/actions/workflows/build-and-test.yml)
 
-## Runing the application with docker
-
-### Run as dev
-
-```sh
-docker-compose up dev
-```
-
-### Run as prod
-
-```sh
-docker-compose up -d prod
-```
-
 ## Runing the application with npm scrips
 
 ```sh
 npm install && npm run build
-```
-
-```sh
-npm run prepare:enviroment
 ```
 
 ### Run as dev
@@ -32,20 +14,20 @@ npm run prepare:enviroment
 npm run dev
 ```
 
-or
-
-```sh
-npm run dev:test
-```
-
 ### Run as prod
 
 ```sh
-npm run start
+npm run deploy
+```
+
+### Run docs
+
+```sh
+npm run dev:docs
 ```
 
 or
 
 ```sh
-npm run start:prod
+npm run start:docs
 ```
