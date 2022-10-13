@@ -2,7 +2,7 @@
 
 [![Node.js CI](https://github.com/hebertcisco/nestjs-serverless-boilerplate/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/hebertcisco/nestjs-serverless-boilerplate/actions/workflows/build-and-test.yml)
 
-## Runing the application with npm scrips
+## Running application with npm scrips
 
 ```sh
 npm install && npm run build
