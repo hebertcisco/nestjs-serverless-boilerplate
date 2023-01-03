@@ -57,7 +57,7 @@
         "@babel/core": "7.20.7",
         "@babel/node": "7.20.7",
         "@babel/preset-env": "7.20.2",
-        "@nestjs/cli": "9.1.5",
+        "@nestjs/cli": "9.1.8",
         "@nestjs/schematics": "9.0.4",
         "@serverless/typescript": "^3.25.0",
         "@types/aws-lambda": "^8.10.109",
